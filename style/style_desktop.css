@@ -1,0 +1,52 @@
+nav {
+  margin: 8px;
+}
+.title_service h2 {
+  font-size: 3.6rem;
+}
+.about-us_seccion {
+  width: 30%;
+  margin: 8px;
+  place-content: start ;
+}
+.container_servicios_box {
+  justify-content: space-between;
+}
+.servicio_box {
+  width: 13%;
+}
+.logo_text img {
+  width: 70%;
+  height: 110px;
+}
+.logo1 {
+ margin: 8px;
+}
+.logo1 img {
+  display: block;
+  width: 100%;
+  height: 110px;
+}
+.logo2 {
+  margin: 8px;
+}
+.logo2 img {
+  display: block;
+  width: 100%;
+  height: 110px;
+}
+.servicio_container {
+  justify-content: space-between;
+}
+.servicio_text {
+  width: 45%;
+}
+.servicio_container figure {
+  width: 50%;
+}
+
+.servicio_container img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}

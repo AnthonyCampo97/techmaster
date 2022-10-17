@@ -1,0 +1,67 @@
+/* * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} */
+main {
+    display: flex;
+    place-content: center;
+    background-image: url(../picture/banner/Banner__H_Teclado2.jpg);
+    border-radius: 10px;
+    border: 5px;
+    margin: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+.container_contact {
+    width: 500px;
+    height: auto;
+}
+form {
+    display: block;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+input[type=text],[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+button{
+    width: 100%;
+    background-color: #d45b45ec;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  

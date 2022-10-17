@@ -1,0 +1,20 @@
+.container_servicios_box {
+  justify-content: space-between;
+}
+.servicio_box {
+  width: 30%;
+}
+.logo_text {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+.logo_text img {
+  margin: 0 auto;
+  width: 70%;
+  height: 110px;
+}
+.servicio_container {
+    place-content: center;
+}
