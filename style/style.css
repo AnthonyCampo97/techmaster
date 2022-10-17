@@ -118,6 +118,10 @@ header {
   border: 6px outset;
   background-color: var(--background_services);
 }
+.servicio_box a{
+  text-decoration: none;
+  color: black;
+}
 .propuesta_valor {
   display: flex;
   flex-wrap: wrap;
