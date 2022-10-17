@@ -15,6 +15,17 @@
   width: 70%;
   height: 110px;
 }
+.container_servicios {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
 .servicio_container {
     place-content: center;
 }
+.propuesta_valor .propuesta_valor_img {
+  padding-top: 15px;
+  padding-bottom: 15px; 
+ }
+ .propuesta_valor .propuesta_valor_img {
+  margin: 0 auto;
+ }

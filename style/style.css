@@ -20,6 +20,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 header {
+  margin-top:10px;
   display: flex;
   flex-wrap: wrap;
   border-bottom: 1px solid var(--Dark);
@@ -29,10 +30,10 @@ header {
   height: 80px;
 }
 .navbar-left {
-  margin: 0 auto;
+  margin: 5px auto;
 }
 .navbar-center {
- margin: 0 auto;
+ margin: 5px auto;
 }
 .navbar-center ul,
 .navbar-center ul {
@@ -134,6 +135,7 @@ header {
   text-align: justify;
   padding: 12px;
   margin: 8px;
+  line-height: 2rem;
 }
 .propuesta_valor_text h3 {
   margin: 4px auto;

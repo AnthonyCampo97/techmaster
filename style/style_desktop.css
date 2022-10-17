@@ -1,13 +1,23 @@
 nav {
   margin: 8px;
 }
-.title_service h2 {
-  font-size: 3.6rem;
-}
 .about-us_seccion {
   width: 30%;
   margin: 8px;
   place-content: start ;
+}
+.propuesta_valor {
+ display: flex;
+ flex-wrap: nowrap; 
+ padding-top: 15px;
+ padding-bottom: 15px; 
+}
+.propuesta_valor .propuesta_valor_text{
+  width: 50%;
+}
+.container_servicios {
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 .container_servicios_box {
   justify-content: space-between;
