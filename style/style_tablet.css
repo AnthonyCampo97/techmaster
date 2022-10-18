@@ -1,3 +1,37 @@
+.navbar-left{
+  margin-left: 15px;
+}
+.navbar-left .logonav img {
+  width: 100%;
+  height: 80px;
+}
+.navbar-center {
+  margin: auto 50px 50px auto;
+}
+.navbar-center ul,
+.navbar-center ul {
+  list-style: none;
+  margin: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline-start: 0;
+}
+
+.navbar-center ul li a,
+.navbar-center ul li a {
+  font-size: var(--lg);
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--Dark);
+  padding: 4px;
+  margin: 0 2px;
+}
+.navbar-center ul li a:hover,
+.navbar-center ul li a:hover {
+  border: 1px solid var(--background_services);
+  border-bottom: 1px solid var(--black);
+}
 .container_servicios_box {
   justify-content: space-between;
 }
