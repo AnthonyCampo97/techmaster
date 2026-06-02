@@ -1,41 +1,211 @@
-/* * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-} */
-h2 {
-  background-color: rgba(160, 217, 255, 0.479);
-  text-align:center ;
-  border-radius: 4px;
-  
+/* ============================================
+   TECH MASTER — Equipos & Catálogo
+   ============================================ */
+
+/* Hero */
+.equipos-hero {
+  text-align: center;
+  padding: 3rem 1.5rem 2rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #0077b6 100%);
+  color: #fff;
 }
-.container_equipos {
+
+.equipos-hero h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.equipos-hero p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #d0eaf7;
+  margin-bottom: 1.5rem;
+}
+
+/* Filtros */
+.filtros-container {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  margin: 8px;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  padding: 1.5rem 1rem;
 }
-.container_item {
-  border: ridge;
-  width: 450px;
-  height: 550px;
-  margin: 6px;
+
+.filtro-btn {
+  padding: 0.55rem 1.2rem;
+  border: 2px solid #0077b6;
+  border-radius: 25px;
+  background: #fff;
+  color: #0077b6;
+  font-size: 0.92rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.container_item figure {
-    display: grid;
-    place-content: center;
-    margin: 4px;
+
+.filtro-btn:hover,
+.filtro-btn.active {
+  background: #0077b6;
+  color: #fff;
 }
-.container_item img {
-    width: 100%;
-    height: 350px;
-    border-radius: 12px;
-    object-fit: cover;   
-    border: solid;
+
+/* Grid catálogo */
+.catalogo-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1rem 1.2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.container_componentes {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    margin: 8px;
+
+/* Tarjeta de producto */
+.producto-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.09);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.14);
+}
+
+.producto-card figure {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.producto-card figure img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.producto-card:hover figure img {
+  transform: scale(1.05);
+}
+
+/* Badges */
+.badge {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  background: #0077b6;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+}
+
+.badge-repuesto {
+  background: #e76f51;
+}
+
+.badge-periferico {
+  background: #2a9d8f;
+}
+
+/* Info del producto */
+.producto-info {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.producto-info h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+.producto-info p {
+  font-size: 0.93rem;
+  color: #555;
+  line-height: 1.6;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+/* Botón WhatsApp por producto */
+.btn-wsp {
+  display: inline-block;
+  background: #25d366;
+  color: #fff;
+  padding: 0.65rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-wsp:hover {
+  background: #1ebe5d;
+  transform: translateY(-2px);
+}
+
+/* CTA final */
+.equipos-cta {
+  text-align: center;
+  background: #f0f8ff;
+  padding: 3rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.equipos-cta h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.8rem;
+}
+
+.equipos-cta p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* ── TABLET ── */
+@media screen and (min-width: 600px) {
+  .catalogo-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
+
+  .equipos-hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* ── DESKTOP ── */
+@media screen and (min-width: 1000px) {
+  .catalogo-grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 2rem 3rem;
+  }
+
+  .equipos-hero {
+    padding: 4rem 2rem 3rem;
+  }
+
+  .equipos-hero h1 {
+    font-size: 3rem;
+  }
+
+  .producto-card figure img {
+    height: 220px;
+  }
+}
