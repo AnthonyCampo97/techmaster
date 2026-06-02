@@ -58,9 +58,9 @@
 }
 
 .servicio_text p {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: #444;
-  line-height: 1.7;
+  line-height: 1.8;
   margin-bottom: 0.8rem;
 }
 
@@ -70,20 +70,20 @@
 }
 
 .servicio_text ul li {
-  font-size: 0.93rem;
+  font-size: 1.03rem;
   color: #444;
-  line-height: 1.8;
+  line-height: 2;
 }
 
 .servicio_precio {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #0077b6;
   margin: 0.5rem 0 1rem;
 }
 
 .servicio_nota {
-  font-size: 0.88rem;
+  font-size: 0.97rem;
   color: #777;
   font-style: italic;
   margin-bottom: 1rem;
@@ -132,7 +132,7 @@
 }
 
 .plan_box span {
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   color: #777;
 }
 
@@ -214,7 +214,7 @@
 }
 
 .form-group label {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #333;
   margin-bottom: 0.4rem;
@@ -226,7 +226,7 @@
   padding: 0.75rem 1rem;
   border: 1.5px solid #ddd;
   border-radius: 8px;
-  font-size: 0.93rem;
+  font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
   color: #333;
   transition: border-color 0.3s ease;
@@ -314,10 +314,10 @@
 
 .contact-card a,
 .contact-card p {
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   color: #ccc;
   text-decoration: none;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .contact-card a:hover {
