@@ -1,125 +1,301 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;1,100;1,300;1,500&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./picture/Logos/Favicon.png">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/style_contact.css">
-    <link rel="stylesheet" href="./style/style_tablet.css" media="screen and (min-width:600px)">
-    <link rel="stylesheet" href="./style/style_desktop.css" media="screen and (min-width:1000px)">
-    <title>Contacto</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <meta name="description" content="Contacta a Tech Master en Cali. Solicita soporte técnico, mantenimiento de equipos, instalación CCTV, diseño web o campañas Google Ads." />
+  <meta name="keywords" content="contacto Tech Master, soporte técnico Cali, solicitar mantenimiento computador, asesoría TI Cali" />
+  <meta name="author" content="Tech Master" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contacto | Tech Master Cali" />
+  <meta property="og:description" content="Escríbenos y recibe asesoría tecnológica personalizada. Estamos en Cali, Colombia." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.tmservicios.net/contact.html" />
+  <meta property="og:image" content="https://www.tmservicios.net/picture/Logos/LogoPortada_WEB.png" />
+  <meta property="og:locale" content="es_CO" />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./picture/Logos/Favicon.png" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/style_tablet.css" media="screen and (min-width:600px)" />
+  <link rel="stylesheet" href="./style/style_desktop.css" media="screen and (min-width:1000px)" />
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <title>Contacto | Tech Master Cali</title>
 </head>
 <body>
+
+  <!-- HEADER -->
   <header>
     <section class="nav-mobile">
-      <img src="./picture/icons/icon_menu.svg" alt="menu" class="menu-icon" />
+      <img src="./picture/icons/icon_menu.svg" alt="Abrir menú" class="menu-icon" />
       <figure class="logo-mobile">
-        <img src="./picture/Logos/Logo_Moblle.png" alt="logoheader" />
+        <img src="./picture/Logos/Logo_Moblle.png" alt="Tech Master logo" />
       </figure>
     </section>
-    <section class="mobile-menu inactive">
+
+    <nav class="mobile-menu inactive" aria-label="Menú móvil">
       <section class="mobile-menu-container">
         <section class="mobile-menu-logo">
-          <img src="./picture/Logos/LogoMenuMovil.png" alt="">
-      </section>
-      <section class="contain-mobile-menu">
+          <img src="./picture/Logos/LogoMenuMovil.png" alt="Tech Master" />
+        </section>
         <ul>
-          <li>
-            <a href="/">Inicio</a>
-          </li>
-          <li>
-            <a href="/services.html">Servicios</a>
-          </li>
-          <li>
-            <a href="/equipos.html">Equipos</a>
-          </li>
-          <li>
-            <a href="/contact.html">Contacto</a>
-          </li>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/services.html">Servicios</a></li>
+          <li><a href="/equipos.html">Equipos</a></li>
+          <li><a href="/contact.html">Contacto</a></li>
         </ul>
-        <!-- <ul>
-          <li>
-            <a href="/" class="email">Ejemplo@com.co</a>
-          </li>
-          <li>
-            <a href="/" class="sign-out">Sing Out</a>
-          </li>
-        </ul> -->
       </section>
-      </section>
-    </section>
+    </nav>
+
     <section class="navbar-left">
       <figure class="logonav">
-        <img src="./picture/Logos/LogoPortada_WEB.png" alt="logoheader" />
+        <img src="./picture/Logos/LogoPortada_WEB.png" alt="Tech Master logo" />
       </figure>
     </section>
+
     <section class="navbar-center">
-      <nav>
+      <nav aria-label="Menú principal">
         <ul>
-          <li>
-            <a href="/">Inicio</a>
-          </li>
-          <li>
-            <a href="/services.html">Servicios</a>
-          </li>
-          <li>
-            <a href="/equipos.html">Equipos</a>
-          </li>
-          <li>
-            <a href="/contact.html">Contacto</a>
-          </li>
-          <!-- <li>
-            <a href="/creditos.html">Creditos</a>
-          </li> -->
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/services.html">Servicios</a></li>
+          <li><a href="/equipos.html">Equipos</a></li>
+          <li><a href="/contact.html" aria-current="page">Contacto</a></li>
         </ul>
       </nav>
     </section>
-  </header>  
-    <main>
-        <Section class="container_contact">
-            <form  action="">
-                <h2>Contacto 📫</h2>
-                <label for="name">
-                    <span>Nombre</span>
-                    <input type="text" name="name" id="name" autocomplete="name" required>
-                </label>
-                <label for="email">
-                    <span>Email</span>
-                    <input type="email" name="email" id="email" autocomplete="email" required>
-                </label>
-                <label for="coment">
-                    <span>comentario</span>
-                    <textarea name="textarea" rows="7" cols="50">Envíanos tus cometarios</textarea>
-                </label>
-                <input type="submit">
-                <button type="reset">Reset form</button>
-            </form>
-        </Section>
-        
-    </main>
-    <footer>
-        <section>
-            <figure class="logo1">
-              <img src="./picture/Logos/logo_footer1.png" alt="LogoFooter_WEB">
-            </figure>
-          </section>
-          <section>
-            <figure class="logo_text">
-              <img src="./picture/Logos/text_tm_footer.png" alt="LogoFooter_WEB">
-            <blockquote>Design by: 2022 Tech Master Cali -Colombia.</blockquote>
-            </figure>
-          </section>
-          <section>
-            <figure class="logo2">
-              <img src="./picture/Logos/logo_footer2.png" alt="logosys">
-            </figure>
-          </section>
-    </footer>
-    <script src="./javascript/script.js"></script>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="contact-main">
+
+    <section class="contact-hero">
+      <h1>¿Cómo podemos ayudarte?</h1>
+      <p>Cuéntanos tu necesidad y te respondemos a la mayor brevedad posible.</p>
+    </section>
+
+    <section class="contact-wrapper">
+
+      <!-- Formulario -->
+      <section class="contact-form-section">
+        <h2>Envíanos un mensaje</h2>
+
+        <div id="form-success" class="form-success hidden">
+          ✅ ¡Mensaje enviado con éxito! Te contactaremos pronto.
+        </div>
+        <div id="form-error" class="form-error hidden">
+          ❌ Hubo un error al enviar. Por favor escríbenos por WhatsApp.
+        </div>
+
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="from_name">Nombre completo *</label>
+            <input type="text" id="from_name" name="from_name" 
+                   placeholder="Tu nombre" required />
+            <span class="field-error" id="error-name"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="from_email">Correo electrónico *</label>
+            <input type="email" id="from_email" name="from_email" 
+                   placeholder="tucorreo@ejemplo.com" required />
+            <span class="field-error" id="error-email"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Teléfono / WhatsApp</label>
+            <input type="tel" id="phone" name="phone" 
+                   placeholder="300 000 0000" />
+          </div>
+
+          <div class="form-group">
+            <label for="service">Servicio de interés *</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Selecciona un servicio</option>
+              <option value="Diagnóstico">🔍 Diagnóstico</option>
+              <option value="Mantenimiento Preventivo">🔧 Mantenimiento Preventivo</option>
+              <option value="Mantenimiento Correctivo">🛠️ Mantenimiento Correctivo</option>
+              <option value="Actualización de Equipos">⚡ Actualización de Equipos</option>
+              <option value="Consultoría TI">💼 Consultoría TI</option>
+              <option value="Mantenimiento Impresoras">🖨️ Mantenimiento Impresoras</option>
+              <option value="Instalación CCTV">📷 Instalación CCTV</option>
+              <option value="Campañas Google Ads">📢 Campañas Google Ads</option>
+              <option value="Diseño Web">🌐 Diseño Web</option>
+              <option value="Venta de Equipos">🖥️ Venta de Equipos</option>
+              <option value="Otro">❓ Otro</option>
+            </select>
+            <span class="field-error" id="error-service"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensaje *</label>
+            <textarea id="message" name="message" rows="5" 
+                      placeholder="Cuéntanos en qué podemos ayudarte..." 
+                      required></textarea>
+            <span class="field-error" id="error-message"></span>
+          </div>
+
+          <button type="submit" class="cta-button" id="submit-btn">
+            Enviar mensaje
+          </button>
+        </form>
+      </section>
+
+      <!-- Información de contacto -->
+      <aside class="contact-info">
+        <h2>También puedes contactarnos por</h2>
+
+        <div class="contact-card">
+          <span class="contact-icon">📱</span>
+          <div>
+            <h3>WhatsApp</h3>
+            <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20necesito%20información%20sobre%20sus%20servicios" 
+               target="_blank" rel="noopener">
+              Chatea con nosotros
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-icon">📧</span>
+          <div>
+            <h3>Correo</h3>
+            <a href="mailto:contacto@tmservicios.net">
+              contacto@tmservicios.net
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-icon">📍</span>
+          <div>
+            <h3>Ubicación</h3>
+            <p>Cali, Valle del Cauca, Colombia</p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-icon">⏰</span>
+          <div>
+            <h3>Horario de atención</h3>
+            <p>Lunes a Viernes: 8:00 am – 6:00 pm</p>
+            <p>Sábados: 9:00 am – 1:00 pm</p>
+          </div>
+        </div>
+
+        <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20necesito%20información%20sobre%20sus%20servicios"
+           target="_blank" rel="noopener" class="whatsapp-btn">
+          💬 Escríbenos por WhatsApp
+        </a>
+      </aside>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <picture class="logo1">
+      <img src="./picture/Logos/logo_footer1.png" alt="Tech Master" />
+    </picture>
+    <div class="logo_text">
+      <img src="./picture/Logos/text_tm_footer.png" alt="Tech Master Cali Colombia" />
+      <p>© 2025 Tech Master · Cali, Colombia ·
+        <a href="mailto:anthonycampo97@outlook.com">contacto@tmservicios.net</a>
+      </p>
+    </div>
+    <picture class="logo2">
+      <img src="./picture/Logos/logo_footer2.png" alt="Tech Master soluciones" />
+    </picture>
+  </footer>
+
+  <!-- JavaScript del formulario -->
+  <script>
+    // ⚠️ REEMPLAZA ESTOS 3 VALORES CON LOS DE TU CUENTA EMAILJS
+    //const EMAILJS_PUBLIC_KEY   = "TU_PUBLIC_KEY";
+    //const EMAILJS_SERVICE_ID   = "TU_SERVICE_ID";
+    //const EMAILJS_TEMPLATE_ID  = "TU_TEMPLATE_ID";
+    
+    const EMAILJS_PUBLIC_KEY   = "ICe_zWHgaoXfxAdT4";
+    const EMAILJS_SERVICE_ID   = "service_lan67vv";
+    const EMAILJS_TEMPLATE_ID  = "template_b4q3yqb";
+
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+
+    const form       = document.getElementById("contact-form");
+    const btnSubmit  = document.getElementById("submit-btn");
+    const msgSuccess = document.getElementById("form-success");
+    const msgError   = document.getElementById("form-error");
+
+    function validateForm() {
+      let valid = true;
+
+      const name    = document.getElementById("from_name").value.trim();
+      const email   = document.getElementById("from_email").value.trim();
+      const service = document.getElementById("service").value;
+      const message = document.getElementById("message").value.trim();
+
+      document.getElementById("error-name").textContent    = "";
+      document.getElementById("error-email").textContent   = "";
+      document.getElementById("error-service").textContent = "";
+      document.getElementById("error-message").textContent = "";
+
+      if (name.length < 3) {
+        document.getElementById("error-name").textContent = "Ingresa tu nombre completo.";
+        valid = false;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        document.getElementById("error-email").textContent = "Ingresa un correo válido.";
+        valid = false;
+      }
+      if (!service) {
+        document.getElementById("error-service").textContent = "Selecciona un servicio.";
+        valid = false;
+      }
+      if (message.length < 10) {
+        document.getElementById("error-message").textContent = "El mensaje es muy corto.";
+        valid = false;
+      }
+      return valid;
+    }
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!validateForm()) return;
+
+      btnSubmit.textContent  = "Enviando...";
+      btnSubmit.disabled     = true;
+      msgSuccess.classList.add("hidden");
+      msgError.classList.add("hidden");
+
+      emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
+        .then(() => {
+          msgSuccess.classList.remove("hidden");
+          form.reset();
+        })
+        .catch(() => {
+          msgError.classList.remove("hidden");
+        })
+        .finally(() => {
+          btnSubmit.textContent = "Enviar mensaje";
+          btnSubmit.disabled    = false;
+        });
+    });
+  </script>
+
+  <script src="./javascript/script.js"></script>
 </body>
 </html>
