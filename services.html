@@ -19,31 +19,32 @@
   <meta property="og:image" content="https://www.tmservicios.net/picture/Logos/LogoPortada_WEB.png" />
   <meta property="og:locale" content="es_CO" />
 
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M5FQRSTSHJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-M5FQRSTSHJ');
+  </script>
+
   <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="./picture/Logos/Favicon.png" />
 
   <!-- Estilos -->
   <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/style_index.css" />
   <link rel="stylesheet" href="./style/style_services.css" />
   <link rel="stylesheet" href="./style/style_tablet.css" media="screen and (min-width:600px)" />
   <link rel="stylesheet" href="./style/style_desktop.css" media="screen and (min-width:1000px)" />
 
   <title>Servicios | Tech Master Cali</title>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M5FQRSTSHJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-M5FQRSTSHJ');
-</script>
 <body>
 
   <!-- HEADER -->
@@ -87,34 +88,43 @@
     </section>
   </header>
 
-  <!-- CONTENIDO PRINCIPAL -->
   <main>
-    <h1 class="title_service">Servicios Tech Master</h1>
-    <p class="subtitle_service">Soluciones tecnológicas integrales para tu hogar y empresa en Cali, Colombia.</p>
+
+    <!-- HERO SERVICIOS -->
+    <section class="page-hero">
+      <div class="page-hero-content reveal">
+        <span class="section-tag">Lo que hacemos</span>
+        <h1>Nuestros Servicios</h1>
+        <p>Soluciones tecnológicas integrales para tu hogar y empresa en Cali, Colombia.</p>
+      </div>
+    </section>
 
     <!-- S01: Diagnóstico -->
-    <article id="s01" class="servicio_container">
-      <section class="servicio_text">
+    <article id="s01" class="servicio-dark reveal">
+      <div class="servicio-dark-text">
+        <span class="service-number">01</span>
         <h2>🔍 Diagnóstico</h2>
+        <p>Evaluación completa del estado de tu equipo antes de cualquier intervención.</p>
         <ul>
           <li>Evaluación del sistema operativo y tiempos de respuesta.</li>
           <li>Verificación de funcionalidad del hardware.</li>
           <li>Detección de fallas y cotización de correctivos.</li>
         </ul>
-        <p class="servicio_precio">💰 $25.000 COP</p>
-        <a href="/contact.html" class="cta-button">Solicitar servicio</a>
-      </section>
-      <figure>
-        <img src="./picture/services/servicio_diagnostico.jpg" 
+        <p class="servicio-precio-dark">💰 $25.000 COP</p>
+        <a href="/contact.html" class="btn-primary">Solicitar servicio</a>
+      </div>
+      <figure class="servicio-dark-img">
+        <img src="./picture/services/servicio_diagnostico.jpg"
              alt="Diagnóstico de equipos de cómputo" loading="lazy" />
       </figure>
     </article>
 
     <!-- S02: Mantenimiento Preventivo -->
-    <article id="s02" class="servicio_container">
-      <section class="servicio_text">
+    <article id="s02" class="servicio-dark servicio-dark-reverse reveal">
+      <div class="servicio-dark-text">
+        <span class="service-number">02</span>
         <h2>🔧 Mantenimiento Preventivo</h2>
-        <p>Mantén tus equipos portátiles y de escritorio operando en óptimo rendimiento. Prevenimos fallas antes de que ocurran, revisando a fondo:</p>
+        <p>Mantén tus equipos portátiles y de escritorio operando en óptimo rendimiento.</p>
         <ul>
           <li>Placa base (Motherboard)</li>
           <li>Procesador (renovación pasta térmica)</li>
@@ -122,187 +132,185 @@
           <li>Unidades de almacenamiento (HDD, SSD, RAM)</li>
           <li>Pantalla, teclado y componentes externos</li>
         </ul>
-        <p class="servicio_nota">Aplica para portátiles, escritorio y AIO (All in One).</p>
-        <p class="servicio_precio">💰 $65.000 COP</p>
-        <a href="/contact.html" class="cta-button">Solicitar servicio</a>
-      </section>
-      <figure>
-        <img src="./picture/services/servicio_preventivo.jpg" 
+        <p class="servicio-nota-dark">Aplica para portátiles, escritorio y AIO.</p>
+        <p class="servicio-precio-dark">💰 $65.000 COP</p>
+        <a href="/contact.html" class="btn-primary">Solicitar servicio</a>
+      </div>
+      <figure class="servicio-dark-img">
+        <img src="./picture/services/servicio_preventivo.jpg"
              alt="Mantenimiento preventivo de computadores" loading="lazy" />
       </figure>
     </article>
 
     <!-- S03: Mantenimiento Correctivo -->
-    <article id="s03" class="servicio_container">
-      <section class="servicio_text">
+    <article id="s03" class="servicio-dark reveal">
+      <div class="servicio-dark-text">
+        <span class="service-number">03</span>
         <h2>🛠️ Mantenimiento Correctivo</h2>
-        <p>Luego del diagnóstico identificamos la causa del problema y tomamos las acciones necesarias para restaurar tu equipo:</p>
+        <p>Identificamos la causa del problema y restauramos tu equipo al óptimo funcionamiento.</p>
         <ul>
           <li>Cotización de repuestos según precio del mercado.</li>
           <li>Instalación de componentes y software requerido.</li>
         </ul>
-        <p class="servicio_precio">💰 $65.000 COP + repuestos</p>
-        <a href="/contact.html" class="cta-button">Solicitar servicio</a>
-      </section>
-      <figure>
-        <img src="./picture/services/servicio_correctivo.jpg" 
+        <p class="servicio-precio-dark">💰 $65.000 COP + repuestos</p>
+        <a href="/contact.html" class="btn-primary">Solicitar servicio</a>
+      </div>
+      <figure class="servicio-dark-img">
+        <img src="./picture/services/servicio_correctivo.jpg"
              alt="Mantenimiento correctivo de computadores" loading="lazy" />
       </figure>
     </article>
 
     <!-- S04: Actualización -->
-    <article id="s04" class="servicio_container">
-      <section class="servicio_text">
+    <article id="s04" class="servicio-dark servicio-dark-reverse reveal">
+      <div class="servicio-dark-text">
+        <span class="service-number">04</span>
         <h2>⚡ Actualización de Equipos</h2>
-        <p>Actualizar no significa comprar un equipo nuevo. Optimizamos tu ordenador para las exigencias del trabajo diario:</p>
+        <p>Actualizar no significa comprar un equipo nuevo. Optimizamos tu ordenador para las exigencias del trabajo diario.</p>
         <ul>
           <li>Análisis de componentes base para determinar mejoras.</li>
           <li>Instalación de RAM, SSD u otros componentes.</li>
           <li>Maximización del rendimiento adaptado a tu uso.</li>
         </ul>
-        <p class="servicio_nota">Valor según diagnóstico y repuestos a instalar.</p>
-        <a href="/contact.html" class="cta-button">Solicitar cotización</a>
-      </section>
-      <figure>
-        <img src="./picture/services/servicio_rendimiento2.jpg" 
+        <p class="servicio-nota-dark">Valor según diagnóstico y repuestos a instalar.</p>
+        <a href="/contact.html" class="btn-primary">Solicitar cotización</a>
+      </div>
+      <figure class="servicio-dark-img">
+        <img src="./picture/services/servicio_rendimiento2.jpg"
              alt="Actualización de equipos de cómputo" loading="lazy" />
       </figure>
     </article>
 
     <!-- S05: Consultoría TI -->
-    <article id="s05" class="servicio_container">
-      <section class="servicio_text">
+    <article id="s05" class="servicio-dark reveal">
+      <div class="servicio-dark-text">
+        <span class="service-number">05</span>
         <h2>💼 Consultoría en Sistemas de Información</h2>
-        <p>Un sistema bien implementado recopila, procesa y distribuye la información necesaria para la operación y control de tu negocio. Nuestra metodología incluye:</p>
+        <p>Acompañamiento estratégico para optimizar los sistemas de información de tu empresa.</p>
         <ul>
           <li>Recopilación y análisis de la situación actual.</li>
           <li>Diagnóstico e identificación del problema central.</li>
           <li>Propuestas de mejora personalizadas.</li>
           <li>Acompañamiento en la implementación.</li>
         </ul>
-        <p class="servicio_nota">Estudio inicial sin costo.</p>
-        <a href="/contact.html" class="cta-button">Agendar consultoría</a>
-      </section>
-      <figure>
-        <img src="./picture/services/servicio_consultoria1.jpg" 
+        <p class="servicio-nota-dark">✅ Estudio inicial sin costo.</p>
+        <a href="/contact.html" class="btn-primary">Agendar consultoría</a>
+      </div>
+      <figure class="servicio-dark-img">
+        <img src="./picture/services/servicio_consultoria1.jpg"
              alt="Consultoría en sistemas de información" loading="lazy" />
       </figure>
     </article>
 
     <!-- S06: Impresoras -->
-    <article id="s06" class="servicio_container">
-      <figure>
-        <img src="./picture/services/servicio_Impresora_fx890.jpg" 
-             alt="Mantenimiento de impresoras" loading="lazy" />
-      </figure>
-      <section class="servicio_text">
+    <article id="s06" class="servicio-dark servicio-dark-reverse reveal">
+      <div class="servicio-dark-text">
+        <span class="service-number">06</span>
         <h2>🖨️ Mantenimiento de Impresoras</h2>
-        <p>La impresora es uno de los componentes más críticos en oficinas y hogares. Ofrecemos servicio especializado para:</p>
+        <p>Servicio especializado para los principales tipos de impresoras del mercado.</p>
         <ul>
           <li>Impresoras láser</li>
           <li>Matriz de punto</li>
           <li>Tinta continua</li>
           <li>Térmicas</li>
         </ul>
-        <p>Tanto mantenimiento preventivo para prolongar la vida útil, como correctivo para solucionar fallas específicas.</p>
-        <a href="/contact.html" class="cta-button">Solicitar servicio</a>
-      </section>
+        <p>Mantenimiento preventivo para prolongar la vida útil y correctivo para solucionar fallas específicas.</p>
+        <a href="/contact.html" class="btn-primary">Solicitar servicio</a>
+      </div>
+      <figure class="servicio-dark-img">
+        <img src="./picture/services/servicio_Impresora_fx890.jpg"
+             alt="Mantenimiento de impresoras" loading="lazy" />
+      </figure>
     </article>
 
     <!-- S07: CCTV -->
-    <article id="s07" class="servicio_container">
-      <section class="servicio_text">
+    <article id="s07" class="servicio-dark reveal">
+      <div class="servicio-dark-text">
+        <span class="service-number">07</span>
         <h2>📷 Instalación de Cámaras CCTV</h2>
-        <p>Protege tu hogar, negocio o propiedad con un sistema de videovigilancia confiable y moderno. El servicio incluye:</p>
+        <p>Protege tu hogar o negocio con videovigilancia moderna y acceso remoto desde tu celular.</p>
         <ul>
           <li>Visita técnica y asesoría personalizada.</li>
           <li>Montaje en puntos estratégicos.</li>
-          <li>Configuración de DVR/NVR y acceso remoto desde celular.</li>
-          <li>Integración con apps móviles para monitoreo en tiempo real.</li>
-          <li>Capacitación de uso y soporte postventa.</li>
+          <li>Configuración de DVR/NVR y acceso remoto.</li>
+          <li>Integración con apps móviles.</li>
+          <li>Capacitación y soporte postventa.</li>
         </ul>
-        <p>Instalamos cámaras analógicas HD, IP con visión nocturna y sistemas con detección de movimiento.</p>
-        <p class="servicio_nota">📍 Servicio disponible en Cali y alrededores.</p>
-        <a href="/contact.html" class="cta-button">Solicitar visita técnica</a>
-      </section>
-      <figure>
-        <img src="./picture/services/servicio_diagnostico.jpg" 
-             alt="Instalación de cámaras de seguridad CCTV en Cali" loading="lazy" />
+        <p class="servicio-nota-dark">📍 Servicio disponible en Cali y alrededores.</p>
+        <a href="/contact.html" class="btn-primary">Solicitar visita técnica</a>
+      </div>
+      <figure class="servicio-dark-img">
+        <img src="./picture/services/servicio_diagnostico.jpg"
+             alt="Instalación de cámaras CCTV en Cali" loading="lazy" />
       </figure>
     </article>
 
     <!-- S08: Google Ads -->
-    <article id="s08" class="servicio_container">
-      <section class="servicio_text">
+    <article id="s08" class="servicio-dark servicio-dark-reverse reveal">
+      <div class="servicio-dark-text">
+        <span class="service-number">08</span>
         <h2>📢 Campañas Google Ads</h2>
-        <p>Aumenta la visibilidad de tu negocio, atrae clientes potenciales y mejora tus ventas de forma medible. Nuestro proceso incluye:</p>
+        <p>Aumenta tu visibilidad, atrae clientes potenciales y mejora tus ventas de forma medible.</p>
         <ul>
           <li>Análisis del negocio y objetivos.</li>
           <li>Investigación de palabras clave y competencia.</li>
           <li>Diseño y configuración de campañas.</li>
-          <li>Monitoreo, optimización continua e informes.</li>
+          <li>Monitoreo, optimización e informes.</li>
         </ul>
-        <p>Tipos de campaña: Búsqueda, Display, YouTube, Remarketing y Shopping.</p>
-        <div class="planes_container">
-          <div class="plan_box">
-            <h3>Plan Básico</h3>
+        <div class="planes-dark">
+          <div class="plan-dark">
+            <h3>Básico</h3>
             <p>$100 USD/mes</p>
-            <span>+ presupuesto de anuncios</span>
           </div>
-          <div class="plan_box destacado">
-            <h3>Plan Profesional</h3>
+          <div class="plan-dark destacado-dark">
+            <h3>Profesional</h3>
             <p>$200 USD/mes</p>
-            <span>+ presupuesto de anuncios</span>
           </div>
-          <div class="plan_box">
-            <h3>Plan Corporativo</h3>
+          <div class="plan-dark">
+            <h3>Corporativo</h3>
             <p>A convenir</p>
-            <span>según objetivos y alcance</span>
           </div>
         </div>
-        <a href="/contact.html" class="cta-button">Solicitar propuesta</a>
-      </section>
-      <figure>
-        <img src="./picture/services/servicio_consultoria1.jpg" 
-             alt="Campañas publicitarias Google Ads" loading="lazy" />
+        <a href="/contact.html" class="btn-primary">Solicitar propuesta</a>
+      </div>
+      <figure class="servicio-dark-img">
+        <img src="./picture/services/servicio_consultoria1.jpg"
+             alt="Campañas Google Ads" loading="lazy" />
       </figure>
     </article>
 
     <!-- S09: Diseño Web -->
-    <article id="s09" class="servicio_container">
-      <section class="servicio_text">
+    <article id="s09" class="servicio-dark reveal">
+      <div class="servicio-dark-text">
+        <span class="service-number">09</span>
         <h2>🌐 Diseño y Programación Web</h2>
-        <p>Tu sitio web es tu carta de presentación digital. Creamos sitios que no solo se ven bien, sino que convierten visitantes en clientes:</p>
+        <p>Sitios profesionales, responsivos y optimizados para SEO que convierten visitantes en clientes.</p>
         <ul>
           <li>Diseño responsive (móvil, tablet y desktop).</li>
-          <li>Navegabilidad intuitiva y experiencia de usuario optimizada.</li>
-          <li>Integración con redes sociales, WhatsApp y Google Maps.</li>
-          <li>Tienda online (e-commerce) con pasarela de pagos.</li>
+          <li>Integración con redes sociales y WhatsApp.</li>
+          <li>Tienda online con pasarela de pagos.</li>
           <li>Capacitación y soporte post-lanzamiento.</li>
         </ul>
-        <p class="servicio_nota">✅ Estudio inicial y prototipo sin costo.</p>
-        <div class="planes_container">
-          <div class="plan_box">
-            <h3>Hosting Básico</h3>
-            <p>Desde $3 USD/año</p>
-            <span>3 GB almacenamiento</span>
+        <div class="planes-dark">
+          <div class="plan-dark">
+            <h3>Básico</h3>
+            <p>$3 USD/año</p>
           </div>
-          <div class="plan_box destacado">
-            <h3>Hosting Ilimitado</h3>
-            <p>Desde $10 USD/año</p>
-            <span>10 GB almacenamiento</span>
+          <div class="plan-dark destacado-dark">
+            <h3>Ilimitado</h3>
+            <p>$10 USD/año</p>
           </div>
-          <div class="plan_box">
-            <h3>Hosting VIP</h3>
-            <p>Desde $20 USD/año</p>
-            <span>20 GB almacenamiento</span>
+          <div class="plan-dark">
+            <h3>VIP</h3>
+            <p>$20 USD/año</p>
           </div>
         </div>
-        <a href="/contact.html" class="cta-button">Solicitar cotización</a>
-      </section>
-      <figure>
-        <img src="./picture/services/servicio_rendimiento2.jpg" 
-             alt="Diseño y programación de páginas web en Cali" loading="lazy" />
+        <p class="servicio-nota-dark">✅ Prototipo inicial sin costo.</p>
+        <a href="/contact.html" class="btn-primary">Solicitar cotización</a>
+      </div>
+      <figure class="servicio-dark-img">
+        <img src="./picture/services/servicio_rendimiento2.jpg"
+             alt="Diseño web en Cali" loading="lazy" />
       </figure>
     </article>
 
@@ -315,14 +323,35 @@
     </picture>
     <div class="logo_text">
       <img src="./picture/Logos/text_tm_footer.png" alt="Tech Master Cali Colombia" />
-      <p>© 2025 Tech Master · Cali, Colombia · 
-        <a href="mailto:contacto@tmservicios.net">contacto@tmservicios.net</a>
+      <p>© 2025 Tech Master · Cali, Colombia ·
+        <a href="mailto:anthonycampo97@outlook.com">contacto@tmservicios.net</a>
       </p>
     </div>
     <picture class="logo2">
       <img src="./picture/Logos/logo_footer2.png" alt="Tech Master soluciones" />
     </picture>
   </footer>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20necesito%20información%20sobre%20sus%20servicios"
+     target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.509 5.843L.057 23.535a.75.75 0 00.921.916l5.765-1.464A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.699 9.699 0 01-4.96-1.355l-.355-.212-3.68.935.978-3.58-.231-.368A9.699 9.699 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+    </svg>
+  </a>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add("visible");
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+  </script>
 
   <script src="./javascript/script.js"></script>
 </body>

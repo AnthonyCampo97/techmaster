@@ -8,14 +8,18 @@
   font-size: 2rem;
   font-weight: 700;
   margin: 2rem 1rem 0.5rem;
-  color: #1a1a2e;
+  color: #ffffff;
+  background: #0a0a0f;
+  padding-top: 1rem;
 }
 
 .subtitle_service {
   text-align: center;
   font-size: 1rem;
-  color: #555;
+  color: #aab8c8;
   margin-bottom: 2.5rem;
+  background: #0a0a0f;
+  padding-bottom: 1rem;
 }
 
 /* ============================================
@@ -28,7 +32,8 @@
   padding: 2rem 1.2rem;
   margin: 0 auto 2rem;
   max-width: 1100px;
-  border-bottom: 1px solid #e0e0e0;
+  background: #0d0d14;
+  border-bottom: 1px solid #1e1e2e;
 }
 
 .servicio_container figure {
@@ -53,13 +58,13 @@
 .servicio_text h2 {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #1a1a2e;
+  color: #ffffff;
   margin-bottom: 0.8rem;
 }
 
 .servicio_text p {
   font-size: 1.05rem;
-  color: #444;
+  color: #aabbcc;
   line-height: 1.8;
   margin-bottom: 0.8rem;
 }
@@ -71,20 +76,20 @@
 
 .servicio_text ul li {
   font-size: 1.03rem;
-  color: #444;
+  color: #aabbcc;
   line-height: 2;
 }
 
 .servicio_precio {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #0077b6;
+  color: #00b4ff;
   margin: 0.5rem 0 1rem;
 }
 
 .servicio_nota {
   font-size: 0.97rem;
-  color: #777;
+  color: #667788;
   font-style: italic;
   margin-bottom: 1rem;
 }
@@ -413,4 +418,170 @@
     position: sticky;
     top: 100px;
   }
+}
+/* ============================================
+   DARK THEME — Servicios
+   ============================================ */
+
+.page-hero {
+  background: linear-gradient(135deg, #0a0a0f 0%, #0d1b2a 100%);
+  padding: 6rem 1.5rem 4rem;
+  text-align: center;
+  border-bottom: 1px solid #1e1e2e;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0.8rem 0;
+}
+
+.page-hero p {
+  font-size: 1rem;
+  color: #aab8c8;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.servicio-dark {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid #1e1e2e;
+}
+
+.service-number {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #00b4ff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.servicio-dark-text h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.servicio-dark-text p {
+  font-size: 0.97rem;
+  color: #aab;
+  line-height: 1.8;
+  margin-bottom: 0.8rem;
+}
+
+.servicio-dark-text ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.servicio-dark-text ul li {
+  font-size: 0.95rem;
+  color: #aab;
+  line-height: 2;
+}
+
+.servicio-dark-text ul li::marker {
+  color: #00b4ff;
+}
+
+.servicio-precio-dark {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #00b4ff;
+  margin: 0.5rem 0 1.2rem;
+}
+
+.servicio-nota-dark {
+  font-size: 0.9rem;
+  color: #667;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.servicio-dark-img img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,180,255,0.12);
+  object-fit: cover;
+  height: 280px;
+}
+
+/* Planes dark */
+.planes-dark {
+  display: flex;
+  gap: 0.8rem;
+  margin: 1.2rem 0;
+  flex-wrap: wrap;
+}
+
+.plan-dark {
+  flex: 1;
+  min-width: 90px;
+  border: 1px solid #1e1e2e;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  background: #111118;
+}
+
+.plan-dark.destacado-dark {
+  border-color: #00b4ff;
+  background: rgba(0,180,255,0.08);
+}
+
+.plan-dark h3 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+
+.plan-dark p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #00b4ff;
+  margin: 0;
+}
+
+/* Desktop — alternar layout */
+@media screen and (min-width: 1000px) {
+  .servicio-dark {
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    padding: 5rem 2rem;
+  }
+
+  .servicio-dark-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .servicio-dark-text {
+    flex: 1;
+  }
+
+  .servicio-dark-img {
+    flex: 1;
+  }
+
+  .servicio-dark-img img {
+    height: 360px;
+  }
+
+  .page-hero h1 {
+    font-size: 3.5rem;
+  }
+}
+body {
+  background: #0a0a0f;
 }
