@@ -11,7 +11,7 @@
   <meta name="author" content="Tech Master" />
   <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Tech Master | Soluciones Tecnológicas en Cali" />
   <meta property="og:description" content="Mantenimiento de equipos, consultoría TI, diseño web, CCTV y Google Ads. Creciendo Juntos." />
   <meta property="og:type" content="website" />
@@ -19,35 +19,35 @@
   <meta property="og:image" content="https://www.tmservicios.net/picture/Logos/LogoPortada_WEB.png" />
   <meta property="og:locale" content="es_CO" />
 
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M5FQRSTSHJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-M5FQRSTSHJ');
+  </script>
+
   <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="./picture/Logos/Favicon.png" />
 
   <!-- Estilos -->
   <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/style_index.css" />
   <link rel="stylesheet" href="./style/style_tablet.css" media="screen and (min-width:600px)" />
   <link rel="stylesheet" href="./style/style_desktop.css" media="screen and (min-width:1000px)" />
 
   <title>Tech Master | Soluciones Tecnológicas en Cali</title>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M5FQRSTSHJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-M5FQRSTSHJ');
-</script>
 <body>
 
   <!-- HEADER -->
   <header>
-    <!-- Navbar móvil -->
     <section class="nav-mobile">
       <img src="./picture/icons/icon_menu.svg" alt="Abrir menú" class="menu-icon" />
       <figure class="logo-mobile">
@@ -55,7 +55,6 @@
       </figure>
     </section>
 
-    <!-- Menú móvil desplegable -->
     <nav class="mobile-menu inactive" aria-label="Menú móvil">
       <section class="mobile-menu-container">
         <section class="mobile-menu-logo">
@@ -70,7 +69,6 @@
       </section>
     </nav>
 
-    <!-- Navbar desktop -->
     <section class="navbar-left">
       <figure class="logonav">
         <img src="./picture/Logos/LogoPortada_WEB.png" alt="Tech Master logo" />
@@ -89,82 +87,178 @@
     </section>
   </header>
 
-  <!-- CONTENIDO PRINCIPAL -->
   <main>
 
-    <!-- Banner principal -->
-    <section class="main-container" aria-label="Banner principal">
-      <figure class="portada">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-tag">🚀 Soluciones Tecnológicas en Cali</p>
+        <h1 class="hero-title">
+          Tu aliado en<br/>
+          <span class="hero-typewriter" id="typewriter"></span>
+        </h1>
+        <p class="hero-subtitle">Optimizamos tus sistemas, protegemos tu negocio y potenciamos tu presencia digital. Adaptados a tu presupuesto.</p>
+        <div class="hero-buttons">
+          <a href="/services.html" class="btn-primary">Ver servicios</a>
+          <a href="/contact.html" class="btn-secondary">Asesoría gratuita</a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>↓</span>
+      </div>
+    </section>
+
+    <!-- CONTADOR DE ESTADÍSTICAS -->
+    <section class="stats-section reveal">
+      <div class="stat-item">
+        <span class="stat-number" data-target="9">0</span>
+        <span class="stat-plus">+</span>
+        <p>Servicios especializados</p>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="5">0</span>
+        <span class="stat-plus">+</span>
+        <p>Años de experiencia</p>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="100">0</span>
+        <span class="stat-plus">+</span>
+        <p>Clientes atendidos</p>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="6">0</span>
+        <span class="stat-plus">+</span>
+        <p>Aliados estratégicos</p>
+      </div>
+    </section>
+
+    <!-- QUIÉNES SOMOS -->
+    <section class="about-section">
+      <div class="about-text reveal">
+        <span class="section-tag">¿Quiénes somos?</span>
+        <h2>Transformamos retos tecnológicos en oportunidades de crecimiento</h2>
+        <p>En Tech Master somos un equipo especializado en ejecutar soluciones integrales en hardware y software. Analizamos los requerimientos de cada cliente y ofrecemos respuestas precisas, oportunas y adaptadas a su presupuesto.</p>
+        <p>Nuestra red de aliados estratégicos nos permite cubrir desde el mantenimiento de equipos hasta proyectos de infraestructura, telefonía IP y marketing digital.</p>
+        <div class="about-badges">
+          <span>✅ Soporte remoto y presencial</span>
+          <span>✅ Adaptados a tu presupuesto</span>
+          <span>✅ Red de aliados especializados</span>
+          <span>✅ Cobertura Cali y alrededores</span>
+        </div>
+        <a href="/contact.html" class="btn-primary">Hablar con un experto</a>
+      </div>
+      <figure class="about-img reveal">
         <img src="./picture/banner/Banner_H_Portatil3.jpg" 
-             alt="Tech Master - Soluciones tecnológicas en Cali" 
-             loading="eager" />
+             alt="Equipo Tech Master trabajando" loading="lazy" />
       </figure>
     </section>
 
-    <!-- Quiénes somos -->
-    <section class="about-us" aria-label="Sobre nosotros">
-      <article class="about-us_seccion">
-        <h2>¿Quiénes somos?</h2>
-        <p>Tech Master es un equipo especializado en ejecutar soluciones oportunas en hardware y software, analizando los requerimientos y retos de nuestros usuarios para brindar la solución que se ajuste a su necesidad y presupuesto.</p>
-      </article>
+    <!-- SERVICIOS -->
+    <section class="services-section">
+      <div class="section-header reveal">
+        <span class="section-tag">Lo que hacemos</span>
+        <h2>Nuestros Servicios</h2>
+        <p>Soluciones completas para tu hogar y empresa</p>
+      </div>
 
-      <article class="about-us_seccion">
-        <h2>Misión</h2>
-        <p>Ofrecer soluciones precisas y oportunas en software y hardware, a través de nuestros servicios especializados, para optimizar los sistemas de información de nuestros clientes.</p>
-      </article>
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="service-icon">🔧</div>
+          <h3>Mantenimiento Preventivo</h3>
+          <p>Revisión exhaustiva de hardware para evitar fallas futuras en portátiles y equipos de escritorio.</p>
+          <span class="service-price">Desde $65.000 COP</span>
+          <a href="/services.html#s02">Ver más →</a>
+        </article>
 
-      <article class="about-us_seccion">
-        <h2>Visión</h2>
-        <p>Ser reconocidos por nuestros clientes como una empresa destacada por la excelencia en el servicio y la alta calidad, implementando ideas innovadoras que respondan eficazmente a sus requerimientos.</p>
-      </article>
-    </section>
+        <article class="service-card reveal">
+          <div class="service-icon">🛠️</div>
+          <h3>Mantenimiento Correctivo</h3>
+          <p>Diagnóstico, cotización de repuestos e instalación de componentes para restaurar tu equipo.</p>
+          <span class="service-price">Desde $65.000 COP</span>
+          <a href="/services.html#s03">Ver más →</a>
+        </article>
 
-    <!-- Servicios destacados -->
-    <section class="container_servicios" aria-label="Servicios">
-      <h2>Nuestros Servicios</h2>
-      <div class="container_servicios_box">
-        <article class="servicio_box">
-          <a href="services.html#s02">🔧 Mantenimiento preventivo</a>
+        <article class="service-card reveal">
+          <div class="service-icon">💼</div>
+          <h3>Consultoría TI</h3>
+          <p>Analizamos tu infraestructura tecnológica y proponemos soluciones estratégicas para tu negocio.</p>
+          <span class="service-price">Estudio inicial gratis</span>
+          <a href="/services.html#s05">Ver más →</a>
         </article>
-        <article class="servicio_box">
-          <a href="services.html#s03">🛠️ Mantenimiento correctivo</a>
+
+        <article class="service-card reveal">
+          <div class="service-icon">📷</div>
+          <h3>Instalación CCTV</h3>
+          <p>Cámaras de seguridad con acceso remoto desde tu celular. Hogares, negocios y fincas.</p>
+          <span class="service-price">Consultar precio</span>
+          <a href="/services.html#s07">Ver más →</a>
         </article>
-        <article class="servicio_box">
-          <a href="services.html#s04">⚡ Actualización de equipos</a>
+
+        <article class="service-card reveal">
+          <div class="service-icon">🌐</div>
+          <h3>Diseño Web</h3>
+          <p>Sitios profesionales, responsivos y optimizados para SEO. Desde prototipo hasta lanzamiento.</p>
+          <span class="service-price">Prototipo sin costo</span>
+          <a href="/services.html#s09">Ver más →</a>
         </article>
-        <article class="servicio_box">
-          <a href="services.html#s05">💼 Consultoría TI</a>
+
+        <article class="service-card reveal">
+          <div class="service-icon">📢</div>
+          <h3>Campañas Google Ads</h3>
+          <p>Aumenta tu visibilidad y ventas con campañas segmentadas y optimizadas continuamente.</p>
+          <span class="service-price">Desde $100 USD/mes</span>
+          <a href="/services.html#s08">Ver más →</a>
         </article>
-        <article class="servicio_box">
-          <a href="services.html#s06">🖨️ Mantenimiento impresoras</a>
-        </article>
-        <article class="servicio_box">
-          <a href="services.html#s07">📷 Instalación CCTV</a>
-        </article>
-        <article class="servicio_box">
-          <a href="services.html#s08">📢 Campañas Google Ads</a>
-        </article>
-        <article class="servicio_box">
-          <a href="services.html#s09">🌐 Diseño Web</a>
-        </article>
-        <article class="servicio_box">
-          <a href="equipos.html">🖥️ Venta de equipos</a>
-        </article>
+      </div>
+
+      <div class="services-cta reveal">
+        <a href="/services.html" class="btn-primary">Ver todos los servicios</a>
       </div>
     </section>
 
-    <!-- Propuesta de valor -->
-    <section class="propuesta_valor" aria-label="Propuesta de valor">
-      <div class="propuesta_valor_text">
-        <h2>Tech Master</h2>
-        <p>Somos tu aliado tecnológico en Cali. Nos adaptamos a tu presupuesto y necesidades, ofreciendo soluciones integrales en hardware, software, redes y marketing digital. Con una red de socios especializados, cubrimos desde el mantenimiento de tu equipo hasta el crecimiento digital de tu empresa.</p>
-        <a href="/contact.html" class="cta-button">Solicita una asesoría gratuita</a>
+    <!-- POR QUÉ ELEGIRNOS -->
+    <section class="why-section">
+      <div class="section-header reveal">
+        <span class="section-tag">Nuestra diferencia</span>
+        <h2>¿Por qué elegir Tech Master?</h2>
       </div>
-      <figure class="propuesta_valor_img">
-        <img src="./picture/banner/Banner_H_Portatil4.jpg" 
-             alt="Soluciones tecnológicas Tech Master" 
-             loading="lazy" />
-      </figure>
+
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <span>⚡</span>
+          <h3>Respuesta oportuna</h3>
+          <p>Entendemos que cada minuto sin equipo funcional impacta tu productividad. Actuamos rápido.</p>
+        </div>
+        <div class="why-card reveal">
+          <span>🎯</span>
+          <h3>Soluciones a tu medida</h3>
+          <p>Nos adaptamos a tu presupuesto y necesidad específica, sin soluciones genéricas.</p>
+        </div>
+        <div class="why-card reveal">
+          <span>🤝</span>
+          <h3>Red de aliados</h3>
+          <p>Contamos con socios especializados en plantas eléctricas, cableado, telefonía IP y más.</p>
+        </div>
+        <div class="why-card reveal">
+          <span>🔒</span>
+          <h3>Confianza y garantía</h3>
+          <p>Respaldamos nuestro trabajo con garantía en servicios y soporte técnico postventa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-section reveal">
+      <div class="cta-content">
+        <h2>¿Listo para optimizar tu tecnología?</h2>
+        <p>Cuéntanos tu necesidad y te respondemos a la mayor brevedad posible. El estudio inicial no tiene costo.</p>
+        <div class="cta-buttons">
+          <a href="/contact.html" class="btn-primary">Solicitar asesoría</a>
+          <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20necesito%20información%20sobre%20sus%20servicios"
+             target="_blank" rel="noopener" class="whatsapp-btn">💬 WhatsApp</a>
+        </div>
+      </div>
     </section>
 
   </main>
@@ -176,8 +270,8 @@
     </picture>
     <div class="logo_text">
       <img src="./picture/Logos/text_tm_footer.png" alt="Tech Master Cali Colombia" />
-      <p>© 2025 Tech Master · Cali, Colombia · 
-        <a href="mailto:contacto@tmservicios.net">contacto@tmservicios.net</a>
+      <p>© 2025 Tech Master · Cali, Colombia ·
+        <a href="mailto:anthonycampo97@outlook.com">contacto@tmservicios.net</a>
       </p>
     </div>
     <picture class="logo2">
@@ -185,6 +279,66 @@
     </picture>
   </footer>
 
+  <!-- BOTÓN WHATSAPP FLOTANTE -->
+  <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20necesito%20información%20sobre%20sus%20servicios"
+     target="_blank" rel="noopener"
+     class="whatsapp-float"
+     aria-label="Contactar por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.509 5.843L.057 23.535a.75.75 0 00.921.916l5.765-1.464A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.699 9.699 0 01-4.96-1.355l-.355-.212-3.68.935.978-3.58-.231-.368A9.699 9.699 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+    </svg>
+  </a>
+
   <script src="./javascript/script.js"></script>
+  <script>
+    // ── Typewriter ──
+    const words = ["tecnología", "hardware", "software", "tu negocio", "el futuro"];
+    let wi = 0, ci = 0, deleting = false;
+    const el = document.getElementById("typewriter");
+
+    function type() {
+      const word = words[wi];
+      el.textContent = deleting ? word.substring(0, ci--) : word.substring(0, ci++);
+      if (!deleting && ci === word.length + 1) { deleting = true; setTimeout(type, 1500); return; }
+      if (deleting && ci === 0) { deleting = false; wi = (wi + 1) % words.length; }
+      setTimeout(type, deleting ? 60 : 100);
+    }
+    type();
+
+    // ── Scroll reveal ──
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add("visible");
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+    // ── Contador ──
+    function animateCounter(el) {
+      const target = +el.dataset.target;
+      const duration = 1500;
+      const step = target / (duration / 16);
+      let current = 0;
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) { el.textContent = target; clearInterval(timer); return; }
+        el.textContent = Math.floor(current);
+      }, 16);
+    }
+
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll(".stat-number").forEach(animateCounter);
+          statsObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll(".stats-section").forEach(el => statsObserver.observe(el));
+  </script>
 </body>
 </html>
