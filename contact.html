@@ -19,33 +19,35 @@
   <meta property="og:image" content="https://www.tmservicios.net/picture/Logos/LogoPortada_WEB.png" />
   <meta property="og:locale" content="es_CO" />
 
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M5FQRSTSHJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-M5FQRSTSHJ');
+  </script>
+
   <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="./picture/Logos/Favicon.png" />
 
   <!-- Estilos -->
   <link rel="stylesheet" href="./style/style.css" />
-  <link rel="stylesheet" href="./style/style_services.css" />
+  <link rel="stylesheet" href="./style/style_index.css" />
+  <link rel="stylesheet" href="./style/style_contact.css" />
   <link rel="stylesheet" href="./style/style_tablet.css" media="screen and (min-width:600px)" />
   <link rel="stylesheet" href="./style/style_desktop.css" media="screen and (min-width:1000px)" />
+
   <!-- EmailJS -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
   <title>Contacto | Tech Master Cali</title>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M5FQRSTSHJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-M5FQRSTSHJ');
-</script>
 <body>
 
   <!-- HEADER -->
@@ -89,49 +91,54 @@
     </section>
   </header>
 
-  <!-- CONTENIDO PRINCIPAL -->
-  <main class="contact-main">
+  <main>
 
-    <section class="contact-hero">
-      <h1>¿Cómo podemos ayudarte?</h1>
-      <p>Cuéntanos tu necesidad y te respondemos a la mayor brevedad posible.</p>
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="page-hero-content reveal">
+        <span class="section-tag">Estamos para ayudarte</span>
+        <h1>¿Cómo podemos ayudarte?</h1>
+        <p>Cuéntanos tu necesidad y te respondemos a la mayor brevedad posible.<br/>
+        El estudio inicial no tiene costo.</p>
+      </div>
     </section>
 
-    <section class="contact-wrapper">
+    <!-- WRAPPER CONTACTO -->
+    <section class="contact-dark-wrapper">
 
-      <!-- Formulario -->
-      <section class="contact-form-section">
+      <!-- FORMULARIO -->
+      <div class="contact-dark-form reveal">
         <h2>Envíanos un mensaje</h2>
 
-        <div id="form-success" class="form-success hidden">
+        <div id="form-success" class="form-dark-success hidden">
           ✅ ¡Mensaje enviado con éxito! Te contactaremos pronto.
         </div>
-        <div id="form-error" class="form-error hidden">
+        <div id="form-error" class="form-dark-error hidden">
           ❌ Hubo un error al enviar. Por favor escríbenos por WhatsApp.
         </div>
 
         <form id="contact-form" novalidate>
-          <div class="form-group">
+          <div class="form-dark-group">
             <label for="from_name">Nombre completo *</label>
-            <input type="text" id="from_name" name="from_name" 
-                   placeholder="Tu nombre" required />
-            <span class="field-error" id="error-name"></span>
+            <input type="text" id="from_name" name="from_name"
+                   placeholder="Tu nombre completo" required />
+            <span class="field-dark-error" id="error-name"></span>
           </div>
 
-          <div class="form-group">
+          <div class="form-dark-group">
             <label for="from_email">Correo electrónico *</label>
-            <input type="email" id="from_email" name="from_email" 
+            <input type="email" id="from_email" name="from_email"
                    placeholder="tucorreo@ejemplo.com" required />
-            <span class="field-error" id="error-email"></span>
+            <span class="field-dark-error" id="error-email"></span>
           </div>
 
-          <div class="form-group">
+          <div class="form-dark-group">
             <label for="phone">Teléfono / WhatsApp</label>
-            <input type="tel" id="phone" name="phone" 
+            <input type="tel" id="phone" name="phone"
                    placeholder="300 000 0000" />
           </div>
 
-          <div class="form-group">
+          <div class="form-dark-group">
             <label for="service">Servicio de interés *</label>
             <select id="service" name="service" required>
               <option value="" disabled selected>Selecciona un servicio</option>
@@ -147,58 +154,55 @@
               <option value="Venta de Equipos">🖥️ Venta de Equipos</option>
               <option value="Otro">❓ Otro</option>
             </select>
-            <span class="field-error" id="error-service"></span>
+            <span class="field-dark-error" id="error-service"></span>
           </div>
 
-          <div class="form-group">
+          <div class="form-dark-group">
             <label for="message">Mensaje *</label>
-            <textarea id="message" name="message" rows="5" 
-                      placeholder="Cuéntanos en qué podemos ayudarte..." 
+            <textarea id="message" name="message" rows="5"
+                      placeholder="Cuéntanos en qué podemos ayudarte..."
                       required></textarea>
-            <span class="field-error" id="error-message"></span>
+            <span class="field-dark-error" id="error-message"></span>
           </div>
 
-          <button type="submit" class="cta-button" id="submit-btn">
+          <button type="submit" class="btn-primary btn-full" id="submit-btn">
             Enviar mensaje
           </button>
         </form>
-      </section>
+      </div>
 
-      <!-- Información de contacto -->
-      <aside class="contact-info">
+      <!-- INFO DE CONTACTO -->
+      <aside class="contact-dark-info reveal">
+
         <h2>También puedes contactarnos por</h2>
 
-        <div class="contact-card">
-          <span class="contact-icon">📱</span>
+        <div class="contact-dark-card">
+          <span class="contact-dark-icon">📱</span>
           <div>
             <h3>WhatsApp</h3>
-            <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20necesito%20información%20sobre%20sus%20servicios" 
-               target="_blank" rel="noopener">
-              Chatea con nosotros
-            </a>
+            <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20necesito%20información%20sobre%20sus%20servicios"
+               target="_blank" rel="noopener">+57 322 506 4877</a>
           </div>
         </div>
 
-        <div class="contact-card">
-          <span class="contact-icon">📧</span>
+        <div class="contact-dark-card">
+          <span class="contact-dark-icon">📧</span>
           <div>
             <h3>Correo</h3>
-            <a href="mailto:contacto@tmservicios.net">
-              contacto@tmservicios.net
-            </a>
+            <a href="mailto:anthonycampo97@outlook.com">contacto@tmservicios.net</a>
           </div>
         </div>
 
-        <div class="contact-card">
-          <span class="contact-icon">📍</span>
+        <div class="contact-dark-card">
+          <span class="contact-dark-icon">📍</span>
           <div>
             <h3>Ubicación</h3>
             <p>Cali, Valle del Cauca, Colombia</p>
           </div>
         </div>
 
-        <div class="contact-card">
-          <span class="contact-icon">⏰</span>
+        <div class="contact-dark-card">
+          <span class="contact-dark-icon">⏰</span>
           <div>
             <h3>Horario de atención</h3>
             <p>Lunes a Viernes: 8:00 am – 6:00 pm</p>
@@ -207,12 +211,27 @@
         </div>
 
         <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20necesito%20información%20sobre%20sus%20servicios"
-           target="_blank" rel="noopener" class="whatsapp-btn">
+           target="_blank" rel="noopener" class="whatsapp-btn wsp-full">
           💬 Escríbenos por WhatsApp
         </a>
+
+        <!-- Servicios rápidos -->
+        <div class="servicios-rapidos">
+          <h3>Servicios más solicitados</h3>
+          <div class="servicios-tags">
+            <a href="/services.html#s02">🔧 Mantenimiento</a>
+            <a href="/services.html#s07">📷 CCTV</a>
+            <a href="/services.html#s09">🌐 Diseño Web</a>
+            <a href="/services.html#s05">💼 Consultoría</a>
+            <a href="/services.html#s08">📢 Google Ads</a>
+            <a href="/equipos.html">🖥️ Equipos</a>
+          </div>
+        </div>
+
       </aside>
 
     </section>
+
   </main>
 
   <!-- FOOTER -->
@@ -231,36 +250,37 @@
     </picture>
   </footer>
 
-  <!-- JavaScript del formulario -->
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20necesito%20información%20sobre%20sus%20servicios"
+     target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.509 5.843L.057 23.535a.75.75 0 00.921.916l5.765-1.464A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.699 9.699 0 01-4.96-1.355l-.355-.212-3.68.935.978-3.58-.231-.368A9.699 9.699 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+    </svg>
+  </a>
+
   <script>
-    // ⚠️ REEMPLAZA ESTOS 3 VALORES CON LOS DE TU CUENTA EMAILJS
-    //const EMAILJS_PUBLIC_KEY   = "TU_PUBLIC_KEY";
-    //const EMAILJS_SERVICE_ID   = "TU_SERVICE_ID";
-    //const EMAILJS_TEMPLATE_ID  = "TU_TEMPLATE_ID";
-    
-    const EMAILJS_PUBLIC_KEY   = "ICe_zWHgaoXfxAdT4";
-    const EMAILJS_SERVICE_ID   = "service_lan67vv";
-    const EMAILJS_TEMPLATE_ID  = "template_b4q3yqb";
+    // EmailJS
+    const EMAILJS_PUBLIC_KEY  = "ICe_zWHgaoXfxAdT4";
+    const EMAILJS_SERVICE_ID  = "service_lan67vv";
+    const EMAILJS_TEMPLATE_ID = "template_b4q3yqb";
 
     emailjs.init(EMAILJS_PUBLIC_KEY);
 
-    const form       = document.getElementById("contact-form");
-    const btnSubmit  = document.getElementById("submit-btn");
-    const msgSuccess = document.getElementById("form-success");
-    const msgError   = document.getElementById("form-error");
+    const form      = document.getElementById("contact-form");
+    const btnSubmit = document.getElementById("submit-btn");
+    const msgOk     = document.getElementById("form-success");
+    const msgErr    = document.getElementById("form-error");
 
     function validateForm() {
       let valid = true;
-
       const name    = document.getElementById("from_name").value.trim();
       const email   = document.getElementById("from_email").value.trim();
       const service = document.getElementById("service").value;
       const message = document.getElementById("message").value.trim();
 
-      document.getElementById("error-name").textContent    = "";
-      document.getElementById("error-email").textContent   = "";
-      document.getElementById("error-service").textContent = "";
-      document.getElementById("error-message").textContent = "";
+      ["error-name","error-email","error-service","error-message"]
+        .forEach(id => document.getElementById(id).textContent = "");
 
       if (name.length < 3) {
         document.getElementById("error-name").textContent = "Ingresa tu nombre completo.";
@@ -281,28 +301,37 @@
       return valid;
     }
 
-    form.addEventListener("submit", function (e) {
+    form.addEventListener("submit", function(e) {
       e.preventDefault();
       if (!validateForm()) return;
 
-      btnSubmit.textContent  = "Enviando...";
-      btnSubmit.disabled     = true;
-      msgSuccess.classList.add("hidden");
-      msgError.classList.add("hidden");
+      btnSubmit.textContent = "Enviando...";
+      btnSubmit.disabled = true;
+      msgOk.classList.add("hidden");
+      msgErr.classList.add("hidden");
 
       emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
         .then(() => {
-          msgSuccess.classList.remove("hidden");
+          msgOk.classList.remove("hidden");
           form.reset();
         })
-        .catch(() => {
-          msgError.classList.remove("hidden");
-        })
+        .catch(() => msgErr.classList.remove("hidden"))
         .finally(() => {
           btnSubmit.textContent = "Enviar mensaje";
-          btnSubmit.disabled    = false;
+          btnSubmit.disabled = false;
         });
     });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add("visible");
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
   </script>
 
   <script src="./javascript/script.js"></script>

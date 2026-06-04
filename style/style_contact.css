@@ -1,67 +1,265 @@
-/* * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-} */
-main {
-    display: flex;
-    place-content: center;
-    background-image: url(../picture/banner/Banner__H_Teclado2.jpg);
-    border-radius: 10px;
-    border: 5px;
-    margin: 5px;
+/* ============================================
+   TECH MASTER — Contact Dark Theme
+   ============================================ */
+
+body {
+  background: #0a0a0f;
 }
 
-h2 {
-    text-align: center;
+.page-hero {
+  background: linear-gradient(135deg, #0a0a0f 0%, #0d1b2a 100%);
+  padding: 6rem 1.5rem 4rem;
+  text-align: center;
+  border-bottom: 1px solid #1e1e2e;
 }
-.container_contact {
-    width: 500px;
-    height: auto;
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0.8rem 0;
 }
-form {
-    display: block;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+
+.page-hero p {
+  font-size: 1rem;
+  color: #aab8c8;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
 }
-input[type=text],[type=email], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+
+/* Wrapper dos columnas */
+.contact-dark-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
 }
-textarea {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+
+/* Formulario */
+.contact-dark-form {
+  background: #111118;
+  border: 1px solid #1e1e2e;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
 }
-input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+
+.contact-dark-form h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.form-dark-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.4rem;
+}
+
+.form-dark-group label {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #aab8c8;
+  margin-bottom: 0.5rem;
+}
+
+.form-dark-group input,
+.form-dark-group select,
+.form-dark-group textarea {
+  padding: 0.85rem 1rem;
+  background: #0a0a0f;
+  border: 1.5px solid #1e1e2e;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-dark-group input::placeholder,
+.form-dark-group textarea::placeholder {
+  color: #444466;
+}
+
+.form-dark-group select option {
+  background: #0a0a0f;
+  color: #fff;
+}
+
+.form-dark-group input:focus,
+.form-dark-group select:focus,
+.form-dark-group textarea:focus {
+  outline: none;
+  border-color: #00b4ff;
+  box-shadow: 0 0 0 3px rgba(0,180,255,0.1);
+}
+
+.form-dark-group textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.field-dark-error {
+  font-size: 0.82rem;
+  color: #ff6b6b;
+  margin-top: 0.3rem;
+}
+
+.form-dark-success {
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  background: rgba(37,211,102,0.1);
+  color: #25d366;
+  border: 1px solid rgba(37,211,102,0.3);
+}
+
+.form-dark-error {
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  background: rgba(255,107,107,0.1);
+  color: #ff6b6b;
+  border: 1px solid rgba(255,107,107,0.3);
+}
+
+.hidden { display: none; }
+
+.btn-full {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Info de contacto */
+.contact-dark-info {
+  background: #111118;
+  border: 1px solid #1e1e2e;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+}
+
+.contact-dark-info h2 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.contact-dark-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid #1e1e2e;
+}
+
+.contact-dark-card:last-of-type {
+  border-bottom: none;
+}
+
+.contact-dark-icon {
+  font-size: 1.6rem;
+  min-width: 2.2rem;
+}
+
+.contact-dark-card h3 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #00b4ff;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-dark-card a {
+  font-size: 0.97rem;
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-dark-card a:hover { color: #00b4ff; }
+
+.contact-dark-card p {
+  font-size: 0.95rem;
+  color: #888;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.wsp-full {
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Servicios rápidos */
+.servicios-rapidos h3 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #00b4ff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.servicios-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.servicios-tags a {
+  background: rgba(0,180,255,0.08);
+  border: 1px solid rgba(0,180,255,0.2);
+  color: #aab8c8;
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.83rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.servicios-tags a:hover {
+  background: rgba(0,180,255,0.15);
+  color: #00b4ff;
+  border-color: #00b4ff;
+}
+
+/* ── DESKTOP ── */
+@media screen and (min-width: 1000px) {
+  .contact-dark-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4rem 2rem;
+    gap: 3rem;
   }
-button{
-    width: 100%;
-    background-color: #d45b45ec;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+
+  .contact-dark-form {
+    flex: 3;
   }
-  
-  
+
+  .contact-dark-info {
+    flex: 2;
+    position: sticky;
+    top: 100px;
+  }
+
+  .page-hero h1 {
+    font-size: 3.5rem;
+  }
+}

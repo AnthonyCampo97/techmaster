@@ -19,32 +19,32 @@
   <meta property="og:image" content="https://www.tmservicios.net/picture/Logos/LogoPortada_WEB.png" />
   <meta property="og:locale" content="es_CO" />
 
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M5FQRSTSHJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-M5FQRSTSHJ');
+  </script>
+
   <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="./picture/Logos/Favicon.png" />
 
   <!-- Estilos -->
   <link rel="stylesheet" href="./style/style.css" />
-  <link rel="stylesheet" href="./style/style_services.css" />
+  <link rel="stylesheet" href="./style/style_index.css" />
   <link rel="stylesheet" href="./style/style_equipos.css" />
   <link rel="stylesheet" href="./style/style_tablet.css" media="screen and (min-width:600px)" />
   <link rel="stylesheet" href="./style/style_desktop.css" media="screen and (min-width:1000px)" />
 
   <title>Equipos y Repuestos | Tech Master Cali</title>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M5FQRSTSHJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-M5FQRSTSHJ');
-</script>
 <body>
 
   <!-- HEADER -->
@@ -88,212 +88,216 @@
     </section>
   </header>
 
-  <!-- CONTENIDO PRINCIPAL -->
   <main>
 
-    <!-- Hero -->
-    <section class="equipos-hero">
-      <h1>Equipos y Repuestos</h1>
-      <p>Computadores, repuestos y periféricos seleccionados para tu hogar y empresa.<br/>
-      Consulta disponibilidad y precio por WhatsApp — te respondemos de inmediato.</p>
-      <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20quiero%20consultar%20disponibilidad%20de%20equipos"
-         target="_blank" rel="noopener" class="whatsapp-btn">
-        💬 Consultar por WhatsApp
-      </a>
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="page-hero-content reveal">
+        <span class="section-tag">Catálogo Tech Master</span>
+        <h1>Equipos y Repuestos</h1>
+        <p>Computadores, repuestos y periféricos seleccionados para tu hogar y empresa.<br/>
+        Consulta disponibilidad y precio directo por WhatsApp.</p>
+        <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20quiero%20consultar%20disponibilidad%20de%20equipos"
+           target="_blank" rel="noopener" class="whatsapp-btn">
+          💬 Consultar disponibilidad
+        </a>
+      </div>
     </section>
 
-    <!-- Filtros -->
-    <section class="filtros-container">
-      <button class="filtro-btn active" data-filter="all">Todos</button>
-      <button class="filtro-btn" data-filter="equipos">🖥️ Equipos</button>
-      <button class="filtro-btn" data-filter="repuestos">🔩 Repuestos</button>
-      <button class="filtro-btn" data-filter="perifericos">🖱️ Periféricos</button>
+    <!-- FILTROS -->
+    <section class="filtros-dark reveal">
+      <button class="filtro-dark active" data-filter="all">✦ Todos</button>
+      <button class="filtro-dark" data-filter="equipos">🖥️ Equipos</button>
+      <button class="filtro-dark" data-filter="repuestos">🔩 Repuestos</button>
+      <button class="filtro-dark" data-filter="perifericos">🖱️ Periféricos</button>
     </section>
 
-    <!-- Catálogo -->
-    <section class="catalogo-grid">
+    <!-- CATÁLOGO -->
+    <section class="catalogo-dark">
 
-      <!-- ── EQUIPOS ── -->
-      <article class="producto-card" data-category="equipos">
+      <!-- EQUIPOS -->
+      <article class="producto-dark reveal" data-category="equipos">
         <figure>
           <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=400&q=80"
                alt="Computador portátil" loading="lazy" />
-          <span class="badge">Nuevo / Usado</span>
+          <span class="badge-dark">Nuevo / Usado</span>
         </figure>
-        <div class="producto-info">
+        <div class="producto-dark-info">
           <h2>Computador Portátil</h2>
           <p>Laptops para trabajo, estudio y diseño. Diversas referencias y configuraciones disponibles.</p>
           <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20quiero%20información%20sobre%20Computador%20Portátil"
-             target="_blank" rel="noopener" class="btn-wsp">💬 Consultar precio</a>
+             target="_blank" rel="noopener" class="btn-wsp-dark">💬 Consultar precio</a>
         </div>
       </article>
 
-      <article class="producto-card" data-category="equipos">
+      <article class="producto-dark reveal" data-category="equipos">
         <figure>
           <img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=400&q=80"
                alt="Computador de escritorio" loading="lazy" />
-          <span class="badge">Nuevo / Usado</span>
+          <span class="badge-dark">Nuevo / Usado</span>
         </figure>
-        <div class="producto-info">
+        <div class="producto-dark-info">
           <h2>Computador de Escritorio</h2>
           <p>Equipos de alto rendimiento para oficina y hogar. Ensamblados según tu presupuesto.</p>
           <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20quiero%20información%20sobre%20Computador%20de%20Escritorio"
-             target="_blank" rel="noopener" class="btn-wsp">💬 Consultar precio</a>
+             target="_blank" rel="noopener" class="btn-wsp-dark">💬 Consultar precio</a>
         </div>
       </article>
 
-      <article class="producto-card" data-category="equipos">
+      <article class="producto-dark reveal" data-category="equipos">
         <figure>
           <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&q=80"
                alt="Monitor" loading="lazy" />
-          <span class="badge">Nuevo / Usado</span>
+          <span class="badge-dark">Nuevo / Usado</span>
         </figure>
-        <div class="producto-info">
+        <div class="producto-dark-info">
           <h2>Monitores</h2>
           <p>Monitores LED y Full HD para trabajo y entretenimiento. Diversas pulgadas disponibles.</p>
           <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20quiero%20información%20sobre%20Monitores"
-             target="_blank" rel="noopener" class="btn-wsp">💬 Consultar precio</a>
+             target="_blank" rel="noopener" class="btn-wsp-dark">💬 Consultar precio</a>
         </div>
       </article>
 
-      <!-- ── REPUESTOS ── -->
-      <article class="producto-card" data-category="repuestos">
+      <!-- REPUESTOS -->
+      <article class="producto-dark reveal" data-category="repuestos">
         <figure>
           <img src="https://images.unsplash.com/photo-1562976540-1502c2145186?w=400&q=80"
                alt="Memoria RAM" loading="lazy" />
-          <span class="badge badge-repuesto">Repuesto</span>
+          <span class="badge-dark badge-repuesto-dark">Repuesto</span>
         </figure>
-        <div class="producto-info">
+        <div class="producto-dark-info">
           <h2>Memoria RAM</h2>
           <p>DDR3, DDR4 y DDR5. Para portátiles y escritorio. Mejora el rendimiento de tu equipo.</p>
           <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20quiero%20información%20sobre%20Memoria%20RAM"
-             target="_blank" rel="noopener" class="btn-wsp">💬 Consultar precio</a>
+             target="_blank" rel="noopener" class="btn-wsp-dark">💬 Consultar precio</a>
         </div>
       </article>
 
-      <article class="producto-card" data-category="repuestos">
+      <article class="producto-dark reveal" data-category="repuestos">
         <figure>
           <img src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=400&q=80"
                alt="Disco SSD" loading="lazy" />
-          <span class="badge badge-repuesto">Repuesto</span>
+          <span class="badge-dark badge-repuesto-dark">Repuesto</span>
         </figure>
-        <div class="producto-info">
+        <div class="producto-dark-info">
           <h2>Discos SSD y HDD</h2>
           <p>Almacenamiento rápido y confiable. SSD SATA, NVMe y discos duros de diversas capacidades.</p>
           <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20quiero%20información%20sobre%20Discos%20SSD%20y%20HDD"
-             target="_blank" rel="noopener" class="btn-wsp">💬 Consultar precio</a>
+             target="_blank" rel="noopener" class="btn-wsp-dark">💬 Consultar precio</a>
         </div>
       </article>
 
-      <article class="producto-card" data-category="repuestos">
+      <article class="producto-dark reveal" data-category="repuestos">
         <figure>
           <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400&q=80"
                alt="Tarjeta gráfica GPU" loading="lazy" />
-          <span class="badge badge-repuesto">Repuesto</span>
+          <span class="badge-dark badge-repuesto-dark">Repuesto</span>
         </figure>
-        <div class="producto-info">
+        <div class="producto-dark-info">
           <h2>Tarjetas Gráficas (GPU)</h2>
           <p>Para diseño, gaming y trabajo profesional. Consulta referencias disponibles.</p>
           <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20quiero%20información%20sobre%20Tarjetas%20Gráficas"
-             target="_blank" rel="noopener" class="btn-wsp">💬 Consultar precio</a>
+             target="_blank" rel="noopener" class="btn-wsp-dark">💬 Consultar precio</a>
         </div>
       </article>
 
-      <article class="producto-card" data-category="repuestos">
+      <article class="producto-dark reveal" data-category="repuestos">
         <figure>
           <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80"
-               alt="Tarjeta madre motherboard" loading="lazy" />
-          <span class="badge badge-repuesto">Repuesto</span>
+               alt="Tarjeta madre" loading="lazy" />
+          <span class="badge-dark badge-repuesto-dark">Repuesto</span>
         </figure>
-        <div class="producto-info">
+        <div class="producto-dark-info">
           <h2>Tarjetas Madre (Board)</h2>
           <p>Placas base para ensamble y reemplazo. Compatibles con Intel y AMD.</p>
           <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20quiero%20información%20sobre%20Tarjetas%20Madre"
-             target="_blank" rel="noopener" class="btn-wsp">💬 Consultar precio</a>
+             target="_blank" rel="noopener" class="btn-wsp-dark">💬 Consultar precio</a>
         </div>
       </article>
 
-      <article class="producto-card" data-category="repuestos">
+      <article class="producto-dark reveal" data-category="repuestos">
         <figure>
           <img src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=400&q=80"
                alt="Fuente de poder" loading="lazy" />
-          <span class="badge badge-repuesto">Repuesto</span>
+          <span class="badge-dark badge-repuesto-dark">Repuesto</span>
         </figure>
-        <div class="producto-info">
+        <div class="producto-dark-info">
           <h2>Fuentes de Poder</h2>
           <p>Fuentes certificadas de 450W a 750W para escritorio. Garantía incluida.</p>
           <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20quiero%20información%20sobre%20Fuentes%20de%20Poder"
-             target="_blank" rel="noopener" class="btn-wsp">💬 Consultar precio</a>
+             target="_blank" rel="noopener" class="btn-wsp-dark">💬 Consultar precio</a>
         </div>
       </article>
 
-      <!-- ── PERIFÉRICOS ── -->
-      <article class="producto-card" data-category="perifericos">
+      <!-- PERIFÉRICOS -->
+      <article class="producto-dark reveal" data-category="perifericos">
         <figure>
           <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&q=80"
                alt="Teclado y mouse" loading="lazy" />
-          <span class="badge badge-periferico">Periférico</span>
+          <span class="badge-dark badge-periferico-dark">Periférico</span>
         </figure>
-        <div class="producto-info">
+        <div class="producto-dark-info">
           <h2>Teclados y Mouse</h2>
           <p>Combos y unidades independientes alámbricos e inalámbricos para oficina y hogar.</p>
           <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20quiero%20información%20sobre%20Teclados%20y%20Mouse"
-             target="_blank" rel="noopener" class="btn-wsp">💬 Consultar precio</a>
+             target="_blank" rel="noopener" class="btn-wsp-dark">💬 Consultar precio</a>
         </div>
       </article>
 
-      <article class="producto-card" data-category="perifericos">
+      <article class="producto-dark reveal" data-category="perifericos">
         <figure>
           <img src="https://images.unsplash.com/photo-1640955011254-39734e60b16f?w=400&q=80"
-               alt="Cámara web webcam" loading="lazy" />
-          <span class="badge badge-periferico">Periférico</span>
+               alt="Cámara web" loading="lazy" />
+          <span class="badge-dark badge-periferico-dark">Periférico</span>
         </figure>
-        <div class="producto-info">
+        <div class="producto-dark-info">
           <h2>Cámaras Web (Webcam)</h2>
           <p>Cámaras HD y Full HD para videollamadas, reuniones y streaming.</p>
           <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20quiero%20información%20sobre%20Cámaras%20Web"
-             target="_blank" rel="noopener" class="btn-wsp">💬 Consultar precio</a>
+             target="_blank" rel="noopener" class="btn-wsp-dark">💬 Consultar precio</a>
         </div>
       </article>
 
-      <article class="producto-card" data-category="perifericos">
+      <article class="producto-dark reveal" data-category="perifericos">
         <figure>
           <img src="https://images.unsplash.com/photo-1618329340733-2c55ba0d52c1?w=400&q=80"
-               alt="Auriculares diadema headset" loading="lazy" />
-          <span class="badge badge-periferico">Periférico</span>
+               alt="Auriculares" loading="lazy" />
+          <span class="badge-dark badge-periferico-dark">Periférico</span>
         </figure>
-        <div class="producto-info">
+        <div class="producto-dark-info">
           <h2>Auriculares y Diademas</h2>
           <p>Headsets con micrófono para call center, gaming y trabajo remoto.</p>
           <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20quiero%20información%20sobre%20Auriculares"
-             target="_blank" rel="noopener" class="btn-wsp">💬 Consultar precio</a>
+             target="_blank" rel="noopener" class="btn-wsp-dark">💬 Consultar precio</a>
         </div>
       </article>
 
-      <article class="producto-card" data-category="perifericos">
+      <article class="producto-dark reveal" data-category="perifericos">
         <figure>
           <img src="https://images.unsplash.com/photo-1625895197185-efcec01cffe0?w=400&q=80"
-               alt="Repetidor Wifi router" loading="lazy" />
-          <span class="badge badge-periferico">Periférico</span>
+               alt="Repetidor WiFi" loading="lazy" />
+          <span class="badge-dark badge-periferico-dark">Periférico</span>
         </figure>
-        <div class="producto-info">
+        <div class="producto-dark-info">
           <h2>Repetidores WiFi</h2>
           <p>Amplía la señal WiFi en tu hogar o empresa. Fácil instalación y configuración.</p>
           <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20quiero%20información%20sobre%20Repetidores%20WiFi"
-             target="_blank" rel="noopener" class="btn-wsp">💬 Consultar precio</a>
+             target="_blank" rel="noopener" class="btn-wsp-dark">💬 Consultar precio</a>
         </div>
       </article>
 
     </section>
 
-    <!-- CTA final -->
-    <section class="equipos-cta">
-      <h2>¿No encuentras lo que buscas?</h2>
-      <p>Cuéntanos qué necesitas y lo conseguimos para ti al mejor precio del mercado.</p>
-      <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20busco%20un%20equipo%20o%20repuesto%20específico"
-         target="_blank" rel="noopener" class="whatsapp-btn">
-        💬 Pedir un producto específico
-      </a>
+    <!-- CTA FINAL -->
+    <section class="cta-section reveal">
+      <div class="cta-content">
+        <h2>¿No encuentras lo que buscas?</h2>
+        <p>Cuéntanos qué necesitas y lo conseguimos al mejor precio del mercado.</p>
+        <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20busco%20un%20equipo%20o%20repuesto%20específico"
+           target="_blank" rel="noopener" class="whatsapp-btn">
+          💬 Pedir producto específico
+        </a>
+      </div>
     </section>
 
   </main>
@@ -314,26 +318,41 @@
     </picture>
   </footer>
 
-  <!-- Filtros JavaScript -->
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/573225064877?text=Hola%20Tech%20Master,%20necesito%20información%20sobre%20sus%20servicios"
+     target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.509 5.843L.057 23.535a.75.75 0 00.921.916l5.765-1.464A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.699 9.699 0 01-4.96-1.355l-.355-.212-3.68.935.978-3.58-.231-.368A9.699 9.699 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+    </svg>
+  </a>
+
   <script>
-    const botones = document.querySelectorAll(".filtro-btn");
-    const tarjetas = document.querySelectorAll(".producto-card");
+    // Filtros
+    const botones = document.querySelectorAll(".filtro-dark");
+    const tarjetas = document.querySelectorAll(".producto-dark");
 
     botones.forEach(btn => {
       btn.addEventListener("click", () => {
         botones.forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
-
         const filtro = btn.dataset.filter;
         tarjetas.forEach(card => {
-          if (filtro === "all" || card.dataset.category === filtro) {
-            card.style.display = "flex";
-          } else {
-            card.style.display = "none";
-          }
+          card.style.display = (filtro === "all" || card.dataset.category === filtro) ? "flex" : "none";
         });
       });
     });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add("visible");
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
   </script>
 
   <script src="./javascript/script.js"></script>
